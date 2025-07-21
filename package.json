@@ -2,7 +2,7 @@
   "type": "module",
   "version": "0.1.0",
   "license": "MIT",
-  "name": "niftyers-next-ui",
+  "name": "@niftyers/next-ui",
   "description": "A simple, open source, accessible next ui components on top of talwindcss.",
   "author": "Lambert Cadalzo <dev@niftyers.com>",
   "repository": {
