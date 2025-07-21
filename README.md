@@ -6,6 +6,7 @@
 ---
 
 ## ✨ Features
+
 - Built for **Next.js** (but works in any React project)
 - **TailwindCSS** first — minimal extra styles
 - **Lightweight**, **tree-shakable** components
@@ -18,10 +19,10 @@
 First, make sure you have **TailwindCSS** set up in your Next.js project.  
 If not, you can follow the [Tailwind Next.js installation guide](https://tailwindcss.com/docs/guides/nextjs).
 
-Then, install `@niftyers-next-ui`:
+Then, install `@niftyers/next-ui`:
 
 ```bash
-npm install @niftyers-next-ui
+npm install @niftyers/next-ui
 ```
 
 ## ❤️ Contributing
@@ -34,12 +35,13 @@ Please make sure your commits follow the [Conventional Commits](https://www.conv
 - `fix`: A bug fix
 - `docs`: Documentation changes
 - `chore`: Tooling or maintenance updates
-- `style`:	Changes that do not affect meaning (formatting, whitespace, etc.)
-- `refactor`:	Code changes that neither fix a bug nor add a feature
-- `perf`:	A code change that improves performance
-- `test`:	Adding missing tests or fixing existing tests
+- `style`: Changes that do not affect meaning (formatting, whitespace, etc.)
+- `refactor`: Code changes that neither fix a bug nor add a feature
+- `perf`: A code change that improves performance
+- `test`: Adding missing tests or fixing existing tests
 
 ## 🙌 Acknowledgments
 
 Main Contributor:
-- **[Lambert Cadalzo](https://github.com/cadalzolc)** – Creator & Maintainer of @niftyers-next-ui
+
+- **[Lambert Cadalzo](https://github.com/cadalzolc)** – Creator & Maintainer of @niftyers/next-ui
