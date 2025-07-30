@@ -5,7 +5,7 @@ import { FC, ReactNode } from "react";
 import { CM } from "@/utils";
 import { RButtonTheme, TColorTheme } from "@/common";
 
-import { NHLoader } from "./_nh.loader";
+import { NHSpinner } from "./_nh.loader";
 
 interface NHButton {
   type?: "button" | "submit";
@@ -58,7 +58,7 @@ export const NHButton: FC<NHButton> = ({
         {caption && caption}
         {iconEnd && <div className="flex items-center">{iconEnd}</div>}
       </div>
-      {isLoading && <NHLoader iconClassName="size-4" />}
+      {isLoading && <NHSpinner iconClassName="size-4" />}
     </button>
   );
 };
@@ -90,7 +90,7 @@ export const NHButtonLink: FC<INHButtonLink> = ({
       {iconStart && <div className="flex items-center">{iconStart}</div>}
       {caption && caption}
       {iconEnd && <div className="flex items-center">{iconEnd}</div>}
-      {isLoading && <NHLoader />}
+      {isLoading && <NHSpinner />}
     </a>
   );
 };
