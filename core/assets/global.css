@@ -1,1 +1,225 @@
 @import "tailwindcss";
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2a2a2c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #848485;
+  min-height: 12x;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #535353;
+}
+/** Pre Defined Animation **/
+.animate-flipInX {
+  -webkit-animation: flipInX 300ms;
+  animation: flipInX 300ms;
+}
+
+.animate-slideInRight {
+  -webkit-animation: slideInRight 300ms;
+  animation: slideInRight 300ms;
+}
+
+/*** Not Found ***/
+.st0 {
+  fill: #1d1f2d;
+}
+.st1 {
+  fill: #ffffff;
+}
+.st2 {
+  fill: none;
+  stroke: #89949b;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.st3 {
+  fill: #3a3d4d;
+  stroke: #89949b;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.st4 {
+  fill: #161616;
+  stroke: #89949b;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.st5 {
+  fill: none;
+  stroke: #89949b;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.st6 {
+  fill: none;
+  stroke: #89949b;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.st7 {
+  fill: #ffffff;
+  stroke: #89949b;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.st8 {
+  fill: #89949b;
+}
+.st9 {
+  fill: #89949b;
+}
+.st10 {
+  fill: none;
+  stroke: #89949b;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.st11 {
+  fill: #ffffff;
+}
+.st12 {
+  fill: #3f51b5;
+  stroke: #8894a0;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.st13 {
+  fill: #ffffff;
+  stroke: #89949b;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.st14 {
+  fill: none;
+  stroke: #89949b;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.st15 {
+  fill: none;
+  stroke: #89949b;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+#arm {
+  transform-origin: 155px 292px;
+  transform: rotateZ(-2deg);
+}
+
+#monkey {
+  animation: monkey-breathe 3s infinite ease-in-out;
+}
+
+#zelda,
+#tetris,
+#moon,
+#star_a,
+#star_b,
+#star_c,
+#star_d,
+#number_4,
+#number_4_2,
+#number_0,
+#sword {
+  animation: levitate 3s infinite ease-in-out;
+}
+
+#zelda {
+  animation-delay: 0s;
+  animation-duration: 3s;
+}
+
+#tetris {
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+
+#moon {
+  animation-delay: 0.5s;
+  animation-duration: 3s;
+}
+
+#star_a {
+  animation-delay: 0s;
+  animation-duration: 3s;
+}
+
+#star_b {
+  animation-delay: 0.5s;
+  animation-duration: 3s;
+}
+
+#star_c {
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+
+#star_d {
+  animation-delay: 1.5s;
+  animation-duration: 3s;
+}
+
+#number_4 {
+  animation-delay: 0s;
+  animation-duration: 3s;
+}
+
+#number_4_2 {
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+
+#number_0 {
+  animation-delay: 0.5s;
+  animation-duration: 3s;
+}
+
+#sword {
+  animation-delay: 1.5s;
+  animation-duration: 3s;
+}
+
+#eye_left {
+  transform-origin: 191px 257px;
+  animation: blink-l 12s infinite ease-in-out;
+}
+
+#eye_right {
+  transform-origin: 205px 256px;
+  animation: blink-r 12s infinite ease-in-out;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
