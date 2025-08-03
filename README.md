@@ -16,14 +16,33 @@
 
 ## 🚀 Installation
 
-First, make sure you have **TailwindCSS** set up in your Next.js project.  
-If not, you can follow the [Tailwind Next.js installation guide](https://tailwindcss.com/docs/guides/nextjs).
+## 📦 Pre-Requisite Packages
+
+Before you begin, make sure your **Next.js** project includes the following packages:
+
+| Package         | Description                       |
+| --------------- | --------------------------------- |
+| `framer-motion` | Smooth animations and transitions |
+| `lucide-react`  | Elegant and consistent SVG icons  |
+| `next-themes`   | Dark/light theme management       |
+| `sonner`        | Minimal toast notification system |
+| `tailwindcss`   | Utility-first CSS framework       |
+
+[Tailwind Next.js installation guide](https://tailwindcss.com/docs/guides/nextjs)
+
+### 🔧 Installation
+
+Run the following commands to install all required packages:
+
+````bash
+npm install framer-motion lucide-react next-themes sonner
+npm install tailwindcss @tailwindcss/postcss postcss
 
 Then, install [@niftyers/next-ui](https://www.npmjs.com/package/@niftyers/next-ui):
 
 ```bash
 npm install @niftyers/next-ui
-```
+````
 
 ## ❤️ Contributing
 
@@ -41,5 +60,6 @@ Please make sure your commits follow the [Conventional Commits](https://www.conv
 - `test`: Adding missing tests or fixing existing tests
 
 ## 🙌 Acknowledgments
+
 - **[Lambert Cadalzo](https://github.com/cadalzolc)**
 - **[Meigo Cadalzo](https://github.com/cadalzomc)**
