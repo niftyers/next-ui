@@ -34,15 +34,15 @@ Before you begin, make sure your **Next.js** project includes the following pack
 
 Run the following commands to install all required packages:
 
-````bash
+```bash
 npm install framer-motion lucide-react next-themes sonner
 npm install tailwindcss @tailwindcss/postcss postcss
-
+```
 Then, install [@niftyers/next-ui](https://www.npmjs.com/package/@niftyers/next-ui):
 
 ```bash
 npm install @niftyers/next-ui
-````
+```
 
 ## ❤️ Contributing
 
