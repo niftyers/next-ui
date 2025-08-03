@@ -1,13 +1,13 @@
 # niftyers-next-ui
 
 > Lightweight, Next.js-ready UI components built with Tailwind CSS.  
-> Designed for speed, simplicity, and beautiful defaults.
+> Designed for speed and simplicity.
 
 ---
 
 ## ✨ Features
 
-- Built for **Next.js** (but works in any React project)
+- Built for **Next.js** only
 - **TailwindCSS** first — minimal extra styles
 - **Lightweight**, **tree-shakable** components
 - Open-source and MIT licensed
@@ -41,7 +41,5 @@ Please make sure your commits follow the [Conventional Commits](https://www.conv
 - `test`: Adding missing tests or fixing existing tests
 
 ## 🙌 Acknowledgments
-
-Main Contributor:
-
-- **[Lambert Cadalzo](https://github.com/cadalzolc)** – Creator & Maintainer of @niftyers/next-ui
+- **[Lambert Cadalzo](https://github.com/cadalzolc)**
+- **[Meigo Cadalzo](https://github.com/cadalzomc)**
