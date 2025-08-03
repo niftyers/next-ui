@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "version": "v0.0.1",
+  "version": "v0.0.2",
   "license": "MIT",
   "name": "@niftyers/next-ui",
   "description": "A simple, open source, accessible nextjs ui components on top of talwindcss.",
