@@ -53,11 +53,7 @@ export const IconNotFound: React.FC<IHtmlSvg> = (props) => {
         className="st0"
         d="M243.3,374.9H140.1c-1.7,0-2.1,2.5-0.4,2.9l44.7,12.6l-19.3,45l34-46.5l39.4-7.4L243.3,374.9z"
       />
-      <path
-        id="rock"
-        className="st5"
-        d="M104,367.5h134.6c1.9,3.5,2.3,4.3,4.1,7.8l-4.3,6.3L199,389l-40,52"
-      />
+      <path id="rock" className="st5" d="M104,367.5h134.6c1.9,3.5,2.3,4.3,4.1,7.8l-4.3,6.3L199,389l-40,52" />
       <path
         id="foot_back"
         className="st3"
@@ -254,11 +250,7 @@ export const IconNotFound: React.FC<IHtmlSvg> = (props) => {
         />
       </g>
       <g id="moon">
-        <path
-          id="moon_body"
-          className="st4"
-          d="M641,34c26,0,47,21,47,47s-21,47-47,47s-47-21-47-47S615,34,641,34z"
-        />
+        <path id="moon_body" className="st4" d="M641,34c26,0,47,21,47,47s-21,47-47,47s-47-21-47-47S615,34,641,34z" />
         <path
           id="moon_shades"
           className="st0"
@@ -360,11 +352,7 @@ export const IconNotFound: React.FC<IHtmlSvg> = (props) => {
           d="M432.5,197.1l10.6-13.9c1.6-2.2,4.7-2.6,6.9-0.9c2.2,1.6,2.6,4.7,0.9,6.9l-10.6,13.9
 		c-1.6,2.2-4.7,2.6-6.9,0.9C431.2,202.4,430.8,199.3,432.5,197.1z"
         />
-        <polygon
-          id="sword_blade"
-          className="st13"
-          points="437,199 446,187.3 387.3,138.9 366.3,136.7 372.2,154 	"
-        />
+        <polygon id="sword_blade" className="st13" points="437,199 446,187.3 387.3,138.9 366.3,136.7 372.2,154 	" />
         <polygon
           id="sword_blade_shadow"
           className="st0"

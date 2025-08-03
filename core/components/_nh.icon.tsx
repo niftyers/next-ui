@@ -1,152 +1,46 @@
-import {
-   Ban as Cancel,
-   CalendarIcon,
-   Check,
-   ChevronDown,
-   ChevronLeft,
-   ChevronRight,
-   ChevronUp,
-   CreditCard,
-   Circle,
-   Download,
-   Edit,
-   File,
-   FileIcon,
-   FileScan,
-   FileText,
-   FileEdit,
-   FileX,
-   FolderPlus,
-   GlobeIcon,
-   HandCoins,
-   ListFilter,
-   ListMusic,
-   Lock,
-   Loader2,
-   LoaderIcon,
-   LogOut,
-   MapPin,
-   Moon,
-   PanelLeft,
-   Plus,
-   Printer,
-   RotateCcw,
-   Save,
-   Search,
-   Send,
-   SquareMousePointer,
-   Sun,
-   TreePalm,
-   Trash2,
-   Unlock,
-   User2,
-   UserCog,
-   X,
-   XIcon,
-   ZoomIn,
-   ZoomOut,
-   BriefcaseBusiness,
-   Puzzle,
-   Monitor,
-   LayoutDashboard,
-   MessageSquare,
-   Code,
-   Tablet,
-   LayoutGrid,
-   GraduationCap,
-   FlaskConical,
-   ChartBarBig,
-   Cloud,
-   ShoppingCart,
-   Swords,
-   Scan,
-   ScanText,
-   QrCode,
-   Blocks
-} from "lucide-react";
+import * as LucideIcons from "lucide-react";
 
-const Icons = {
-   Cancel,
-   CalendarIcon,
-   Check,
-   Download,
-   Edit,
-   CreditCard,
-   ChevronDown,
-   ChevronLeft,
-   ChevronRight,
-   ChevronUp,
-   Circle,
-   File,
-   FileIcon,
-   FileScan,
-   FileText,
-   FileEdit,
-   FileX,
-   FolderPlus,
-   GlobeIcon,
-   HandCoins,
-   ListFilter,
-   ListMusic,
-   Lock,
-   Loader2,
-   LoaderIcon,
-   LogOut,
-   MapPin,
-   Moon,
-   PanelLeft,
-   Plus,
-   Printer,
-   RotateCcw,
-   Save,
-   Search,
-   Send,
-   SquareMousePointer,
-   Sun,
-   TreePalm,
-   Trash2,
-   User2,
-   UserCog,
-   Unlock,
-   X,
-   XIcon,
-   ZoomIn,
-   ZoomOut,
-   BriefcaseBusiness,
-   Puzzle,
-   Monitor,
-   LayoutDashboard,
-   MessageSquare,
-   Code,
-   Tablet,
-   LayoutGrid,
-   GraduationCap,
-   FlaskConical,
-   ChartBarBig,
-   Cloud,
-   ShoppingCart,
-   Swords,
-   Scan,
-   ScanText,
-   QrCode,
-   Blocks
+import { SvgIcons } from "@/icons";
+
+type IconComponent = React.FC<{ size?: number; className?: string }>;
+
+const isIconComponent = (value: any): value is IconComponent => {
+  return typeof value === "function";
 };
 
-export type TLucideIcon = keyof typeof Icons;
+const filteredLucideIcons = Object.entries(LucideIcons).reduce(
+  (acc, [key, val]) => {
+    if (isIconComponent(val)) {
+      acc[key] = val;
+    }
+    return acc;
+  },
+  {} as Record<string, IconComponent>
+);
 
-interface ILucideIcon {
-   icon: TLucideIcon;
-   size?: number;
-   className?: string;
+const filteredSvgIcons = SvgIcons as Record<string, IconComponent>;
+
+const Icons: Record<string, IconComponent> = {
+  ...filteredLucideIcons,
+  ...filteredSvgIcons,
+};
+
+type TIcon = keyof typeof Icons;
+
+interface INhIcon {
+  icon?: TIcon;
+  size?: number;
+  className?: string;
 }
 
-export const NHIcon = ({ icon, ...props }: ILucideIcon) => {
-   const IconRender = Icons[icon];
+const NhIcon = ({ icon, ...props }: INhIcon) => {
+  if (!icon) return null;
 
-   if (!IconRender) {
-      console.warn(`Icon "${icon}" not found`);
-      return null;
-   }
+  const IconRender = Icons[icon];
+  if (!IconRender) return null;
 
-   return <IconRender {...props} />;
+  return <IconRender {...props} />;
 };
+
+export { NhIcon };
+export type { TIcon };

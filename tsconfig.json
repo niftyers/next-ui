@@ -16,7 +16,8 @@
     "incremental": true,
     "baseUrl": "core",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "next/*": ["./node_modules/next/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],
