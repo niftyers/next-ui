@@ -1,1 +1,41 @@
-export * from "./_icon.nf";
+import {
+  IconAgent,
+  IconCog,
+  IconDashboard,
+  IconDiscord,
+  IconGitHub,
+  IconGMail,
+  IconHome,
+  IconHomeFill,
+  IconLinkedIn,
+  IconMenu,
+  IconMessenger,
+  IconSlack,
+  IconStarFill,
+  IconStarFillHalf,
+  IconUpwork,
+  IconWhatsApp,
+  IconYoutube,
+} from "./_common";
+import { IconNotFound } from "./_other";
+
+export const SvgIcons = {
+  SvgCog: IconCog,
+  SvgDashboard: IconDashboard,
+  SvgHome: IconHome,
+  SvgHomeFill: IconHomeFill,
+  SvgYoutube: IconYoutube,
+  SvgMessenger: IconMessenger,
+  SvgGmail: IconGMail,
+  SvgDiscord: IconDiscord,
+  SvgSlack: IconSlack,
+  SvgGitHub: IconGitHub,
+  SvgUpwork: IconUpwork,
+  SvgLinkedIn: IconLinkedIn,
+  SvgMenu: IconMenu,
+  SvgWhatsApp: IconWhatsApp,
+  SvgStarFill: IconStarFill,
+  SvgStarFillHalf: IconStarFillHalf,
+  SvgAgent: IconAgent,
+  SvgNotFound: IconNotFound,
+};

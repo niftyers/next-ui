@@ -5,9 +5,9 @@ import { FC, ReactNode } from "react";
 import { CM } from "@/utils";
 import { RButtonTheme, TColorTheme } from "@/common";
 
-import { NHSpinner } from "./_nh.loader";
+import { NhSpinner } from "./_nh.loader";
 
-interface NHButton {
+interface INhButton {
   type?: "button" | "submit";
   theme?: TColorTheme;
   caption: string;
@@ -19,12 +19,7 @@ interface NHButton {
   onClick?: () => void;
 }
 
-interface INHButtonLink extends NHButton {
-  path: string;
-  isExternal?: boolean;
-}
-
-export const NHButton: FC<NHButton> = ({
+const NhButton: FC<INhButton> = ({
   type = "button",
   theme = "default",
   caption,
@@ -46,9 +41,7 @@ export const NHButton: FC<NHButton> = ({
         "flex gap-1 items-center text-xs rounded-sm px-2 py.1.5 transition relative",
         RButtonTheme[theme],
         className,
-        isLoading || isDisabled
-          ? "!cursor-none disabled:!opacity-80"
-          : "hover:cursor-pointer hover:animate-pulse"
+        isLoading || isDisabled ? "!cursor-none disabled:!opacity-80" : "hover:cursor-pointer hover:animate-pulse"
       )}
       disabled={isDisabled || isLoading}
       onClick={handeClick}
@@ -58,12 +51,17 @@ export const NHButton: FC<NHButton> = ({
         {caption && caption}
         {iconEnd && <div className="flex items-center">{iconEnd}</div>}
       </div>
-      {isLoading && <NHSpinner iconClassName="size-4" />}
+      {isLoading && <NhSpinner iconClassName="size-4" />}
     </button>
   );
 };
 
-export const NHButtonLink: FC<INHButtonLink> = ({
+interface INhButtonLink extends INhButton {
+  path: string;
+  isExternal?: boolean;
+}
+
+const NhButtonLink: FC<INhButtonLink> = ({
   theme = "default",
   path,
   caption,
@@ -90,7 +88,9 @@ export const NHButtonLink: FC<INHButtonLink> = ({
       {iconStart && <div className="flex items-center">{iconStart}</div>}
       {caption && caption}
       {iconEnd && <div className="flex items-center">{iconEnd}</div>}
-      {isLoading && <NHSpinner />}
+      {isLoading && <NhSpinner />}
     </a>
   );
 };
+
+export { NhButton, NhButtonLink };
