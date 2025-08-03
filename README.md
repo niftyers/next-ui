@@ -53,7 +53,6 @@ Please make sure your commits follow the [Conventional Commits](https://www.conv
 - `feat`: A new feature
 - `fix`: A bug fix
 - `docs`: Documentation changes
-- `chore`: Tooling or maintenance updates
 - `style`: Changes that do not affect meaning (formatting, whitespace, etc.)
 - `refactor`: Code changes that neither fix a bug nor add a feature
 - `perf`: A code change that improves performance
