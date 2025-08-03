@@ -19,7 +19,7 @@
 First, make sure you have **TailwindCSS** set up in your Next.js project.  
 If not, you can follow the [Tailwind Next.js installation guide](https://tailwindcss.com/docs/guides/nextjs).
 
-Then, install `@niftyers/next-ui`:
+Then, install [`@niftyers/next-ui`](https://www.npmjs.com/package/@niftyers/next-ui):
 
 ```bash
 npm install @niftyers/next-ui
